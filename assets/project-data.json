@@ -1,0 +1,87 @@
+﻿{
+    "accentTwo":  "#ea580c",
+    "stack":  [
+                  "Text Processing",
+                  "Ethereum Addresses",
+                  "Data Cleaning",
+                  "Blockchain Analytics"
+              ],
+    "docs":  [
+                 {
+                     "label":  "Repository",
+                     "url":  "https://github.com/cloudy-fix/Contract-adresses-extraction",
+                     "note":  "Source, commits, issues, and project files"
+                 },
+                 {
+                     "label":  "Architecture",
+                     "url":  "https://github.com/cloudy-fix/Contract-adresses-extraction/blob/main/docs/ARCHITECTURE.md",
+                     "note":  "System design and responsibilities"
+                 },
+                 {
+                     "label":  "Operations",
+                     "url":  "https://github.com/cloudy-fix/Contract-adresses-extraction/blob/main/docs/OPERATIONS.md",
+                     "note":  "Runbook and deployment notes"
+                 },
+                 {
+                     "label":  "Workflow Diagram",
+                     "url":  "https://github.com/cloudy-fix/Contract-adresses-extraction/blob/main/docs/diagrams/workflow.mmd",
+                     "note":  "End-to-end process map"
+                 },
+                 {
+                     "label":  "Architecture Diagram",
+                     "url":  "https://github.com/cloudy-fix/Contract-adresses-extraction/blob/main/docs/diagrams/architecture.mmd",
+                     "note":  "Component-level diagram"
+                 }
+             ],
+    "demoType":  "extraction",
+    "highlights":  [
+                       "Extracts contract addresses from messy input",
+                       "Deduplicates results",
+                       "Prepares downstream blockchain analysis"
+                   ],
+    "title":  "Contract Address Extraction",
+    "category":  "Blockchain Data Utility",
+    "components":  [
+                       "Text input",
+                       "Address pattern matcher",
+                       "Deduplication",
+                       "Clean output",
+                       "Analytics handoff"
+                   ],
+    "repo":  "Contract-adresses-extraction",
+    "runtime":  "GitHub Pages runs the extraction utility directly in the browser. The repo documents how this can feed scoring, monitoring, or analytics workflows.",
+    "sample":  {
+                   "text":  "Protocol note: USDC token 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48 and WETH 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2 appeared in the trace.",
+                   "pipeline":  [
+                                    "Collect source text",
+                                    "Match 0x address format",
+                                    "Deduplicate contracts",
+                                    "Export clean list"
+                                ]
+               },
+    "accent":  "#9333ea",
+    "visibility":  "Public",
+    "mission":  "A live extraction utility for finding Ethereum contract addresses in logs, docs, notes, and scraped blockchain text.",
+    "metrics":  [
+                    {
+                        "label":  "Input",
+                        "detail":  "Notes, logs, scraped data",
+                        "value":  "Raw text"
+                    },
+                    {
+                        "label":  "Output",
+                        "detail":  "Ready for analytics",
+                        "value":  "Unique addresses"
+                    },
+                    {
+                        "label":  "Mode",
+                        "detail":  "No backend required",
+                        "value":  "Browser utility"
+                    }
+                ],
+    "links":  {
+                  "pages":  "https://cloudy-fix.github.io/Contract-adresses-extraction/",
+                  "portfolio":  "https://cloudy-fix.github.io/portfolio/projects.html",
+                  "repo":  "https://github.com/cloudy-fix/Contract-adresses-extraction"
+              }
+}
