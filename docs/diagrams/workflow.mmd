@@ -1,0 +1,6 @@
+﻿flowchart TD
+    S1["Collect contract text"] --> S2["Detect address-like sections"]
+    S2["Detect address-like sections"] --> S3["Normalize extracted fields"]
+    S3["Normalize extracted fields"] --> S4["Review uncertain matches"]
+    S4["Review uncertain matches"] --> S5["Export structured output"]
+
